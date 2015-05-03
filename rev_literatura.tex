@@ -1,0 +1,374 @@
+\chapter{Revisão da Bibliografia}
+\label{chap:revisao}
+
+Este capítulo descreve o trabalho de revisão da bibliografia realizado. Foram realizadas duas revisões exploratórias: uma exploratória livre e uma seguindo recomendações de \citeonline{kitchenham:2004} porém com menos rigidez, ambas com o objetivo principal de investigar e estabelecer um conjunto de ferramentas computacionais e suas características utilizadas no ensino médio e superior tanto em sala de aula quanto em ambientes virtuais. Buscando também informações sobre como é realizado seu uso através de dispositivos móveis. 
+
+Além destes fatores, serão analisados e discutidos os resultados obtidos. Assim, este capítulo visa encontrar relatos na literatura sobre a linha a ser pesquisada neste trabalho. Foram pesquisadas também ferramentas comerciais que também fazem parte da linha do trabalho. 
+ 
+\section{Revisões sistemáticas relacionadas}
+Há revisões sistemáticas publicados que possuem objetivos bem próximos aos aqui almejados, porém extraindo informações diferentes da proposta por este.
+
+Em \citeonline{barbosa:2012} é realizada uma revisão sistemática da literatura com o objetivo de investigar e estabelecer um conjunto de características e requisitos para o domínio de sistemas computacionais de aprendizagem móveis, focando principalmente nas características e requisitos não funcionais.
+
+Neste trabalho é descrito pontos relevantes a serem considerados em projetos de sistemas computacionais de aprendizagem convencionais e com suporte a dispositivos móveis. Segundo ainda ao autor, um projeto de sistema deve atender aos requisitos básicos educacionais/pedagógicos, garantir um nível de serviço, segurança e desempenho mínimo, atentando-se também a usabilidade do mesmo.
+
+A revisão realizada neste trabalho difere do exposto por \citeonline{barbosa:2012} por levantar características e funcionalidades de sistemas convencionais que podem de alguma forma ou não possuírem suporte a dispositivos móveis, e também por almejar por investigar quais as características funcionais dos mesmos, não focando principalmente em requisitos não funcionais.
+
+\section{Metodologia}
+
+A revisão sistemática da literatura consiste em uma forma de identificar, validar e interpretar todas as pesquisas relevantes a uma determinada pergunta de pesquisa, tópico ou fenômeno de interesse \cite{kitchenham:2004}. 
+
+Existem muitos motivos para se fazer uma revisão, dentre eles: conhecer de forma abrangente um determinado assunto, identificar possíveis oportunidades para futuras pesquisas ou ainda para ser utilizada como base a atividades de pesquisa \cite{kitchenham:2004}. 
+
+O planejamento dsta revisão foi realizada segundo \cite{kitchenham:2004}, onde aconselha-se a definição das perguntas de pesquisa como a primeira tarefa após a definição do objetivo principal. As perguntas de pesquisa definidas para este trabalho estão descritas na Tabela \ref{tab:perguntas}.
+
+\bgroup
+\def\arraystretch{1.5} % 1 is the default, change whatever you need
+\begin{table}[h]{} % t - top of page - h - here - b - bottom
+\centering
+\begin{tabular}{|p{14cm}|} \hline
+\textbf{Pergunta 1:} Quais sistemas computacionais são utilizados em aula, online e/ou extra-classe? \\ \hline
+\textbf{Pergunta 2:} Quais destes sistemas são multiplataforma, incluindo sistemas móveis? \\ \hline
+\textbf{Pergunta 3:} Quais destes sistemas permitem interação em tempo-real? \\ \hline
+\textbf{Pergunta 4:} Quais destes sistemas quantos permitem retorno/feedback do aluno em tempo-real? \\ \hline
+\textbf{Pergunta 5:} Quais destes sistemas permitem ao aluno rever a aula posteriormente? \\ \hline
+\textbf{Pergunta 6:} Se utilizado em sala de aula, quais os resultados obtidos baseados em métricas como desempenho acadêmico, motivação? \\ \hline
+\end{tabular}
+\caption{Perguntas de pesquisa definidas para a revisão sistemática}
+\label{tab:perguntas}
+\end{table}
+\egroup
+
+
+Após a definição das perguntas de pesquisa, foi planejado uma estratégia de busca. Nesta atividade foram escolhidas quais bases de dados seriam utilizadas como fonte de artigos e quais seriam os critérios para incluir ou não um artigo de acordo com sua relevância ao objetivo da pesquisa. Assim sendo, foram escolhidas como fontes de artigos as seguintes bases: IEEE Xplore, ACM Digital Library e Revista Brasileira de Informática na Educação – RBIE.
+
+Definidas as fontes onde seriam realizadas as buscas, a próxima etapa foi estabelecer como as buscas seriam realizadas através da construção de \emph{strings} de busca. A Tabela \ref{tab:strings} mostra as bases e suas respectivas \emph{strings}. Como as \emph{strings} de busca não foram padronizadas entre as fontes, para aumentar o número de artigos retornados, está revisão é considerada exploratória e não sistemática.
+
+\bgroup
+\def\arraystretch{1.5} % 1 is the default, change whatever you need
+\begin{table}[h]{} % t - top of page - h - here - b - bottom
+\centering
+\begin{tabular}{ | p{3cm} | p{10cm}| } \hline
+\textbf{Base} & \textbf{\emph{String} de busca} \\ \hline
+IEEE Xplore & \emph{((teach OR learn OR education) AND ("computer assisted" OR "computer aided" OR "computer supported") AND mobile AND (web OR internet))} \\ \hline
+ACM & \emph{(teach or learn or education) and ("computer assisted" or "computer aided" or "computer supported")} \\ \hline
+RBIE & \emph{colaboração} \\ \hline
+RBIE & \emph{móvel} \\ \hline
+\end{tabular}
+\caption{\emph{Strings} de busca utilizadas em cada base}
+\label{tab:strings}
+\end{table}
+\egroup
+
+As \emph{strings} de busca foram construídas levando em consideração o tipo de base que estávamos buscando. Por exemplo, a \emph{string} conter termos \emph{informática e educação} na RBIE não se fez explicitamente necessário, por a mesma tratar-se de uma revista específica sobre este assunto.
+
+Na etapa subsequente, foram estabelecidos os critérios de inclusão e exclusão, os quais auxiliam na classificação de um artigo como relevante ou não a pesquisa. A Tabela \ref{tab:criteriosInclusao} e \ref{tab:criteriosExclusao} mostram os critérios de inclusão e de exclusão, respectivamente.
+\bgroup
+\def\arraystretch{1.5} % 1 is the default, change whatever you need
+\begin{table}[h]{} % t - top of page - h - here - b - bottom
+\centering
+\begin{tabular}{ | p{14cm}| } \hline
+Publicados e disponíveis integralmente em bases de dados científicas \\ \hline
+Trabalhos que utilizam tecnologia em educação, especificamente com utilização de tecnologias móveis \\ \hline
+%trabalhos recentes (publicados a partir de 2007) publicados nas fontes descritas acima (analisar se vai precisar) \\ \hline
+\end{tabular}
+\caption{Critérios de inclusão}
+\label{tab:criteriosInclusao}
+\end{table}
+\egroup
+
+
+
+\bgroup
+\def\arraystretch{1.5} % 1 is the default, change whatever you need
+\begin{table}[h]{} % t - top of page - h - here - b - bottom
+\centering
+\begin{tabular}{ | p{14cm}| } \hline
+Trabalhos que não são relacionados com tecnologia na educação. \\ \hline
+Trabalhos como laboratórios virtuais ou ferramentas semelhantes voltadas a auxiliar o aprendizado de um único conteúdo ou conjunto de conteúdo específicos \\ \hline
+Trabalhos que não são aplicados ao ensino médio e superior \\ \hline
+Trabalhos que são estudos secundários \\ \hline
+%Trabalhos que utilizam tecnologia na educação que não são multiplataforma \\ \hline
+\end{tabular}
+\caption{Critérios de exclusão}
+\label{tab:criteriosExclusao}
+\end{table}
+\egroup
+
+Para a realização das buscas nas bases científicas, bem como gerenciar o processo de classificação dos artigos de acordo com os critérios de inclusão e exclusão, foi desenvolvido a ferramenta JustReview \cite{tulio:2013}. A ferramenta salva os resultados obtidos através das buscas às bases de dados, e permite também uma forma eficiente de classificar os artigos confrontando o \emph{abstract} com os critérios de inclusão e exclusão. Após realizado a primeira classificação dos artigos através do \emph{abstract}, a ferramenta baixa as versões completas dos artigos classificados como relevantes para leitura.
+
+A revisão exploratória buscou ferramentas de mercado que geralmente não geraram publicações científicas, e portanto, não foram possíveis de serem analisadas na revisão sistemática. Foram buscadas ferramentas que podem ser utilizadas em sala de aula e no ensino a distância, e foi feita também a análise quando ao uso em plataforma móveis.
+
+\section{Resultados e discussão}
+A partir das buscas realizadas, foram retornados 751 artigos das 3 bases de dados utilizadas. Destes artigos, através da leitura dos \emph{abstracts} e depois de aplicado os critérios de inclusão e exclusão, foram selecionados 80 artigos para leitura completa. Após a leitura completa, 42 artigos foram selecionados para a extração das informações referentes a esta revisão, onde os resultados são apresentados a seguir. Foram encontrados também 12 ferramentas comerciais que também foram selecionados baseados nos critérios de inclusão e exclusão.
+
+\section{Funcionalidades presentes em sistemas de aprendizagem}
+As funcionalidades presentes em sistemas de aprendizagem extraídos dos artigos lidos são listadas e descritas e analisadas a seguir. Relatos sobre a expansão de uma determinada funcionalidade, ou algum uso ainda mais específico, também é analisado. Ao final da descrição de cada funcionalidade é sumarizado os artigos que descrevem ferramentas com a funcionalidade descrita.
+
+\textbf{Quiz}: permite que os alunos respondam a uma ou mais questões fechadas \cite{tokiwa_web-based_2009, ijtihadie_offline_2010, schmiedl_mobile_2010, covic_development_2010, schon_lightweight_2012}, e o professor monitore as respostas das mesmas, gerando visualizações gráficas. O \emph{Clicker} é uma aplicação especial de Quiz onde geralmente as respostas são enviadas através de hardwares específicos \cite{tokiwa_web-based_2009}. O Quiz pode ser utilizado também para aumentar a motivação em cursos presenciais e a distância, principalmente pela sua simplicidade e rapidez em ser aplicado \cite{tokiwa_web-based_2009}. Funcionalidade presente em:
+
+\vspace{-5mm}
+\begin{itemize}
+\item AuReS \cite{jagar_auress:_2012}
+\item A Lightweight Mobile Quiz Application with Support for Multimedia Content \cite{schon_lightweight_2012}
+\item Conducting Classroom Discussions in the Manner of an Orchestra Using a Mobile Phone Based Response Analyzing System \cite{nakai_conducting_2007}
+\item An Integrated e-Learning Platform for Use in Higher Education \cite{florea_integrated_2011}
+\item Development of a system for mobile learning \cite{covic_development_2010}
+\item Instructional m-Learning System Design Based on Learners: MprinceTool \cite{fardoun_instructional_2010}
+\item Offline web application and quiz synchronization for e-learning activity for mobile browser \cite{ijtihadie_offline_2010}
+\item Web-based tools to sustain the motivation of students in distance education \cite{tokiwa_web-based_2009}
+\item Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010} e Mobile enabling of virtual teams in school: an observational study on smart phone application in secondary education \cite{schmiedl_mobile_2010}
+\end{itemize}
+
+\noindent
+Presente também nos sistemas comerciais:
+
+\vspace{-5mm}
+\begin{itemize}
+\item \citeonline{tophat}
+\item \citeonline{poll_everywhere}
+\item \citeonline{sms_poll}
+\item \citeonline{clicker_school}
+\item \citeonline{shakespeak}
+\item \citeonline{socrative}
+\end{itemize}
+
+
+
+
+\textbf{Anotações}: permite que os alunos editem, salvem e compartilhem suas anotações de aula com outros alunos e professores \cite{singh_collaborative_2004, rawat_work_2008, griffioen_teaching_1998}. Utilizado em sistemas para o ensino a distância \cite{singh_collaborative_2004, rawat_work_2008} e em presenciais \cite{ griffioen_teaching_1998}. Funcionalidade presente em: 
+
+\vspace{-5mm}
+\begin{itemize}
+\item A Mobile Lecture Slide Organization Tool for Students \cite{chow_mobile_2006}
+\item Collaborative Note Taking \cite{singh_collaborative_2004}
+\item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+\item KLeOS: A personal, mobile, knowledge and learning organisation system \cite{vavoula_kleos:_2002}
+\item Work in progress-integrating mobile Tablet-PC technology and Classroom Management Software in undergraduate electronic engineering technology courses \cite{rawat_work_2008}
+\item Supporting Online Coordination of Learning Teams through Mobile Devices \cite{roig-torres_supporting_2012}
+Teaching in realtime wireless classrooms \cite{griffioen_teaching_1998}.
+\end{itemize}
+
+\textbf{Apresentação de slides}: apresentações de slides são muito utilizados em sala de aula, e quando disponíveis em sistemas de aprendizagem computacionais estão relacionadas principalmente em disponibilizá-las de forma organizada aos alunos \cite{chow_mobile_2006} e permitir o compartilhamento de anotações sobre os slides entre alunos e entre alunos e professores em tempo-real \cite{singh_collaborative_2004, griffioen_teaching_1998, rawat_work_2008}. É uma funcionalidade utilizada tanto em sala de aula quanto no ensino a distância. Esta presente ferramenta comercial: \citeonline{shakespeak} e também nos seguintes artigos: 
+
+\vspace{-5mm}
+\begin{itemize}
+\item A Lightweight Mobile Quiz Application with Support for Multimedia Content \cite{schon_lightweight_2012}
+\item A Mobile Lecture Slide Organization Tool for Students \cite{chow_mobile_2006}
+\item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+\item A smil-based multimedia system for mobile education \cite{di_smil-based_2009}
+\item Distance-Learning and Converging Mobile Devices \cite{hoganson_distance-learning_2009}
+\item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+\item Unified content design for ubiquitous learning: The soldering seminar use case \cite{rodriguez-alsina_unified_2010}.
+\end{itemize}
+
+\textbf{Mensagens em tempo-real}: a troca de mensagens em tempo-real é uma funcionalidade utilizada em sala de aula através de sistemas não educacionais comerciais  \cite{yao_enhancing_2011}, em sistemas de aprendizagem em aulas presenciais \cite{griffioen_teaching_1998} e no ensino a distância \cite{rodriguez-alsina_unified_2010}. Pode ser utilizado na troca de mensagens entre alunos, alunos e professores, e professores e pais de alunos \cite{hashim_development_2012}. Funcionalidade presente em:
+
+\vspace{-5mm}
+\begin{itemize}
+    \item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item Instructional m-Learning System Design Based on Learners: MprinceTool \cite{fardoun_instructional_2010}
+    \item Mobile Learning Application Based On Hybrid Mobile Application Technology Running On Android Smartphone and Blackberry \cite{setiabudi_mobile_2013}
+    \item Enhancing Classroom Education with Instant Messaging Tools \cite{yao_enhancing_2011}
+    \item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+    \item Unified content design for ubiquitous learning: The soldering seminar use case \cite{rodriguez-alsina_unified_2010}
+    \item Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010}
+    \item Supporting Online Coordination of Learning Teams through Mobile Devices \cite{roig-torres_supporting_2012}
+    \item The Development of New Conceptual Model for MobileSchool \cite{hashim_development_2012}
+    \item Xtask-adaptable working environment \cite{ketamo_xtask-adaptable_2002} 
+\end{itemize}
+
+\noindent
+Esta presente também nas ferramentas comerciais: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item \citeonline{mastery_connect}
+    \item \citeonline{edmodo}
+    \item \citeonline{remind_101}
+\end{itemize}
+
+\textbf{Fórum de discussões}: fórum de discussões é uma funcionalidade que permite alunos fazerem questionamentos, compartilhar e trocar ideias, aprender mais sobre os materiais de aula e sobre experiências \cite{nguyen_comobile:_2006}. É uma funcionalidade também bastante presente em sistemas utilizados de ensino a distância, sendo nestes casos uma das formas de medição de participação \cite{chimos_unibook_2012, schmiedl_mobile_2010, ketamo_xtask-adaptable_2002}. Está presente na ferramenta comercial \citeonline{edmodo} e também presente nos artigos:
+
+\vspace{-5mm}
+\begin{itemize}
+    \item Supporting Online Coordination of Learning Teams through Mobile Devices \cite{roig-torres_supporting_2012}
+    \item CoMobile: Collaborative learning with mobile devices \cite{nguyen_comobile:_2006}
+    \item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Mobile Learning Application Based On Hybrid Mobile Application Technology Running On Android Smartphone and Blackberry \cite{setiabudi_mobile_2013}
+    \item Using cellular phones in higher education: mobile access to online course materials \cite{mermelstein_using_2005}
+    \item Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010}
+    \item The Development of New Conceptual Model for MobileSchool \cite{hashim_development_2012}
+\end{itemize}
+
+\textbf{Áudio}: é uma funcionalidade onde arquivos de áudio são disponibilizados para os alunos. Os arquivos podem conter livros narrados \cite{mermelstein_using_2005}, conter a aula gravada ou outros conteúdos disponível para acesso antes ou depois da aula pelos alunos \cite{boyinbode_mobile_2012} ou no ensino a distância disponibilizando arquivos gravados ou transmissões ao vivo \cite{hoganson_distance-learning_2009, rodriguez-alsina_unified_2010}.  Funcionalidade presente em: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item A mobile learning application for delivering educational resources to mobile devices \cite{boyinbode_mobile_2012}
+    \item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item A smil-based multimedia system for mobile education \cite{di_smil-based_2009}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Distance-Learning and Converging Mobile Devices \cite{hoganson_distance-learning_2009}
+    \item Management of Multimedia Data for Streaming on a Distributed e-Learning System \cite{hayakawa_management_2012}
+    \item KLeOS: A personal, mobile, knowledge and learning organisation system \cite{vavoula_kleos:_2002}
+    \item On webcasting to mobile devices: reusing web \& video content for pervasive e-learning \cite{turro_webcasting_2007}
+    \item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+    \item Using cellular phones in higher education: mobile access to online course materials \cite{mermelstein_using_2005}
+\end{itemize}
+
+\textbf{Vídeo}: é uma funcionalidade onde arquivos de vídeo são disponibilizados para os alunos. Os arquivos podem conter a gravação das aulas presenciais \cite{mermelstein_using_2005}, aulas do ensino a distância gravadas e ao vivo \cite{hoganson_distance-learning_2009, turro_webcasting_2007, chimos_unibook_2012, rodriguez-alsina_unified_2010}. Pode ser utilizado também uma variação desta funcionalidade onde é possível transmitir a tela do computador e também fazer chamadas ou conferências em vídeo \cite{chimos_unibook_2012}. Está presente na ferramenta comercial \citeonline{edmodo} e presente também nos seguintes artigos: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item A mobile learning application for delivering educational resources to mobile devices \cite{boyinbode_mobile_2012}
+    \item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item A smil-based multimedia system for mobile education \cite{di_smil-based_2009}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Distance-Learning and Converging Mobile Devices \cite{hoganson_distance-learning_2009}
+    \item Management of Multimedia Data for Streaming on a Distributed e-Learning System \cite{hayakawa_management_2012}
+    \item KLeOS: A personal, mobile, knowledge and learning organisation system \cite{vavoula_kleos:_2002}
+    \item On webcasting to mobile devices: reusing web \& video content for pervasive e-learning \cite{turro_webcasting_2007}
+    \item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+    \item Unified content design for ubiquitous learning: The soldering seminar use case \cite{rodriguez-alsina_unified_2010} e Using cellular phones in higher education: mobile access to online course materials \cite{mermelstein_using_2005}
+\end{itemize}
+
+\textbf{Tela compartilhada}: permite que alunos colaborem em uma área compartilhada com a inserção de apresentações de slides, arquivos e textos \cite{liu_interaction_2007}, pode ainda ser utilizada como um quadro-branco interativo possibilitando ser desenhado sobre \cite{chimos_unibook_2012, griffioen_teaching_1998}. Está presente na ferramenta comercial \citeonline{class_dojo} e nos artigos: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item An Interaction Study of Learning with Handhelds and Large Shared-Displays in Technology-Enriched Collaborative Classroom \cite{liu_interaction_2007}
+    \item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+\end{itemize}
+
+\textbf{Materiais}: a disponibilização e distribuição de materiais é uma tarefa recorrente em ambientes acadêmicos. Esta funcionalidade está presente em sistemas de ensino a distância \citeonline{bonastre_e-dap:_2005} e \citeonline{sultana_e-school:_2010}  e em sistemas utilizados em aulas presenciais \cite{mermelstein_using_2005}. Está presente nas ferramentas comerciais: \citeonline{mastery_connect}, \citeonline{edmodo} e \citeonline{teacher_kit} e também nos artigos.
+
+\vspace{-5mm}
+\begin{itemize}
+    \item Funcionalidade presente em: How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item E-dap: an e-learning tool for managing, distributing and capturing knowledge \cite{bonastre_e-dap:_2005}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Mobile Learning Application Based On Hybrid Mobile Application Technology Running On Android Smartphone and Blackberry \cite{setiabudi_mobile_2013}
+    \item KLeOS: A personal, mobile, knowledge and learning organisation system \cite{vavoula_kleos:_2002}
+    \item Using cellular phones in higher education: mobile access to online course materials \cite{mermelstein_using_2005}
+    \item The Development of New Conceptual Model for MobileSchool \cite{hashim_development_2012}
+    \item Xtask-adaptable working environment \cite{ketamo_xtask-adaptable_2002}
+\end{itemize}
+
+\textbf{Avaliações}: avaliar o conhecimento dos alunos através de testes é uma funcionalidade bastante utilizada em sistemas de aprendizagem utilizados em aulas presenciais \cite{fardoun_instructional_2010} e também em sistemas de ensino a distância \cite{bonastre_e-dap:_2005}. Há algumas funcionalidades adicionais que também podem estar presentes, como formas de gerar testes aleatórios através de bancos de testes e de questões \cite{fardoun_instructional_2010}. Funcionalidade presente em: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item An Integrated e-Learning Platform for Use in Higher Education \cite{florea_integrated_2011}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Instructional m-Learning System Design Based on Learners: MprinceTool \cite{fardoun_instructional_2010}
+    \item Design and Development of the Online Examination and Evaluation System Based on B/S Structure \cite{li_design_2007}
+    \item Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010}
+\end{itemize}
+
+\noindent
+Está presente também nas ferramentas comerciais: 
+\vspace{-5mm}
+\begin{itemize}
+    \item \citeonline{mastery_connect}
+    \item \citeonline{teacher_kit}
+    \item \citeonline{class_dojo}
+    \item \citeonline{stick_pick}
+    \item \citeonline{socrative}
+\end{itemize}
+
+\textbf{Quadro de recados}: servir como um canal de comunicação entre professores e alunos em ambiente acadêmico. Está bastante presente em sistemas de ensino a distância pela própria natureza do mesmo \cite{sultana_e-school:_2010}. Funcionalidade presente em: E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010} e Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010}, e está presente também na ferramenta comercial \citeonline{clicker_school}.
+
+\textbf{Suporte a dispositivos móveis}: todos os artigos selecionados na revisão sistemática possuiam algum tipo de suporte a dispositivos móveis. Funcionalidade presente em: 
+
+\vspace{-5mm}
+\begin{itemize}
+    \item AuReS \cite{jagar_auress:_2012}
+    \item A Lightweight Mobile Quiz Application with Support for Multimedia Content \cite{schon_lightweight_2012}
+    \item A Mobile Lecture Slide Organization Tool for Students \cite{chow_mobile_2006}
+    \item Collaborative Note Taking \cite{singh_collaborative_2004}
+    \item Conducting Classroom Discussions in the Manner of an Orchestra Using a Mobile Phone Based Response Analyzing System \cite{nakai_conducting_2007}
+    \item Supporting Online Coordination of Learning Teams through Mobile Devices \cite{roig-torres_supporting_2012}
+    \item An Interaction Study of Learning with Handhelds and Large Shared-Displays in Technology-Enriched \item Collaborative Classroom \cite{liu_interaction_2007}
+    \item An Integrated e-Learning Platform for Use in Higher Education \cite{florea_integrated_2011}
+    \item CoMobile: Collaborative learning with mobile devices \cite{nguyen_comobile:_2006}
+    \item A mobile learning application for delivering educational resources to mobile devices \cite{boyinbode_mobile_2012}
+    \item Development of a system for mobile learning \cite{covic_development_2010}
+    \item How ECM can be used for distance learning content management ECM to LCM \cite{daoudi_how_2012}
+    \item A smil-based multimedia system for mobile education \cite{di_smil-based_2009}
+    \item E-dap: an e-learning tool for managing, distributing and capturing knowledge \cite{bonastre_e-dap:_2005}
+    \item E-School: A web-service oriented resource based e-learning system \cite{sultana_e-school:_2010}
+    \item Distance-Learning and Converging Mobile Devices \cite{hoganson_distance-learning_2009}
+    \item Instructional m-Learning System Design Based on Learners: MprinceTool \cite{fardoun_instructional_2010}
+    \item Management of Multimedia Data for Streaming on a Distributed e-Learning System \cite{hayakawa_management_2012}
+    \item Mobile Learning Application Based On Hybrid Mobile Application Technology Running On Android Smartphone and Blackberry \cite{setiabudi_mobile_2013}
+    \item KLeOS: A personal, mobile, knowledge and learning organisation system \cite{vavoula_kleos:_2002}
+    \item Offline web application and quiz synchronization for e-learning activity for mobile browser \cite{ijtihadie_offline_2010}
+    \item On webcasting to mobile devices: reusing web \& video content for pervasive e-learning \cite{turro_webcasting_2007}
+    \item Design and Development of the Online Examination and Evaluation System Based on B/S Structure \cite{li_design_2007}
+    \item Enhancing Classroom Education with Instant Messaging Tools \cite{yao_enhancing_2011}
+    \item Unibook SE: An innovative environment for life-long learning \cite{chimos_unibook_2012}
+    \item Unified content design for ubiquitous learning: The soldering seminar use case \cite{rodriguez-alsina_unified_2010}
+    \item Using cellular phones in higher education: mobile access to online course materials \cite{mermelstein_using_2005}
+    \item Web-based tools to sustain the motivation of students in distance education \cite{tokiwa_web-based_2009}
+    \item Work in progress-integrating mobile Tablet-PC technology and Classroom Management Software in undergraduate electronic engineering technology courses \cite{rawat_work_2008}
+    \item Implementing a Mobile Campus Using MLE Moodle \cite{xhafa_implementing_2010}
+    \item Mobile enabling of virtual teams in school: an observational study on smart phone application in secondary education \cite{schmiedl_mobile_2010}
+    \item Supporting Online Coordination of Learning Teams through Mobile Devices \cite{roig-torres_supporting_2012}
+    \item Teaching in realtime wireless classrooms \cite{griffioen_teaching_1998}
+    \item The Development of New Conceptual Model for MobileSchool \cite{hashim_development_2012}
+    \item Xtask-adaptable working environment \cite{ketamo_xtask-adaptable_2002}
+\end{itemize}
+
+\noindent
+As ferramentas comericiais seguintes também possuem suporte a dispositivos móveis:
+
+\vspace{-5mm}
+\begin{itemize}
+    \item \citeonline{poll_everywhere}
+    \item \citeonline{sms_poll}
+    \item \citeonline{clicker_school}
+    \item \citeonline{shakespeak}
+    \item \citeonline{mastery_connect}
+    \item \citeonline{edmodo}
+    \item \citeonline{teacher_kit}
+    \item \citeonline{class_dojo}
+    \item \citeonline{remind_101}
+    \item \citeonline{stick_pick}
+\end{itemize}
+
+Na realização desta revisão exploratória foi encontrada também a pesquisa \cite{pusnik_investigation_2010} realizada com alunos do ensino superior onde, categorias de funcionalidades foram confrontadas quanto o seu nível de importância para alunos em um sistema de ensino a distância a ser ativado. A Tabela \ref{tab:importancia} mostra o resultado desta pesquisa.
+ 
+\bgroup
+\def\arraystretch{1.1} % 1 is the default, change whatever you need
+\begin{table}[h]{} % t - top of page - h - here - b - bottom
+\centering
+\small
+\begin{tabular}{ | p{3cm}| p{2cm}| p{2cm}| p{1.8cm}| p{1.8cm}| p{1.5cm} | p{1.7cm}| } \hline
+\textbf{Conjunto de funcionalidades} & \textbf{Muito importante} & \textbf{Importante} & \textbf{Indeciso} & \textbf{Não muito importante} & \textbf{Sem importância} & \textbf{Média / Desvio} \\ \hline
+Trabalho colaborativo com outros alunos & 74 (31,5 \%) & 103 (43,8\%) & 33 (14\%) & 21 (8,9\%) & 4 (1,7\%) & 3,94 / 0,983 \\ \hline
+Comunicação com outros alunos (sínc. e assínc.) & 65 (27,7\%) & 100 (42,6\%) & 29 (12,3\%) & 35 (14,9\%) & 6 (2,6\%) & 3,78 / 1,087 \\ \hline
+Comunicação com professores (sínc. e assínc.) & 116 (49,4\%) & 92 (39,1\%) & 16 (6,8\%) & 10 (4,3\%) & 1 (0,4\%) & 4,33 / 0,816 \\ \hline
+Tecnologias web 2.0 (blog, wiki, RSS, etc.) & 49 (20,9\%) & 103 (43,8\%) & 44 (18,7\%) & 35 (14,9\%) & 4 (1,7\%) & 3,67 / 1,021 \\ \hline
+\end{tabular}
+\caption{Importância de uma característica a ser ativada em um sistema de ensino a distância }
+\label{tab:importancia}
+\end{table}
+\egroup
+
+Nesta pesquisa, fica evidente a importância para os alunos que os sistemas de aprendizagem possam permitir a colaboração e uma maior comunicação entre os alunos e entre os alunos e professores, bem como uma maior proximidade com os sistemas e plataformas sociais de mercado.
+
+\section{Resultados obtidos}
+
+A maioria dos artigos que apresentam seus resultados apenas o relatam como uma melhoria no processo de ensino e aprendizagem, mas não mostram como o resultado foi mensurado. Alguns artigos mostram a melhoria através da opinião dos alunos obtidos através de um questionário \cite{rawat_work_2008}. Há artigos que apenas relatam que o uso da ferramenta ajudou a aumentar a motivação dos alunos em sala de aula e em cursos a distância \cite{tokiwa_web-based_2009}.
+No artigo \cite{singh_collaborative_2004} foi relatado um problema com a usabilidade da ferramenta de compartilhamento de notas e apresentação de slides, que a tornava mais difícil de ser utilizada, mesmo ela sendo descrita pelos alunos como de grande valor ao processo de aprendizagem.
+
+\section{Conclusão}
+Este artigo apresentou as funcionalidades presentes em sistemas de aprendizagem móveis que podem ser utilizados em sala de aula ou no ensino a distância, obtidos através da revisão sistemática proposta, os quais cumpriram com o objetivo deste trabalho que era conhecer como está sendo aplicado tecnologia e colaboração em sistemas de ensino e aprendizagem.
+
+O conjunto de funcionalidades aqui apresentadas servirão de base para outros pesquisadores possam decidir ou levantar quais funcionalidades são relevantes em um sistema a ser utilizado em sala de aula e no ensino a distância.
+
+Outra contribuição deste trabalho refere-se ao desenvolvimento da ferramenta JustReview \cite{tulio:2013}, a qual teve seu código fonte aberto e pode ser útil a vários pesquisadores que também estejam realizando trabalhos de revisões sistemáticas.
+
+Como trabalhos futuros, a partir das funcionalidades levantadas, trabalhar na concepção, desenvolvimento e levantamento dos resultados da aplicação de um sistema que contemple um subconjuntos destas. Outro trabalho futuro pretendido é a escrita de um artigo descrevendo as funcionalidades e resultados obtidos pela ferramenta JustReview \cite{tulio:2013}.
