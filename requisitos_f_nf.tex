@@ -1,0 +1,107 @@
+\section{Requisitos funcionais}
+
+\subsection{RF 01 – Identificar professores e alunos}
+
+\textbf{Descrição:} a ferramenta deve permitir a identificação e autenticação de usuários professores e alunos, bem como gerenciar permissões específicas a cada um deles. Além disso, a forma de autenticação deverá exigir o preenchimento mínimo de informações.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 02 – Gerenciar sessões}
+
+\textbf{Descrição:} a ferramenta deve permitir que professores iniciem novas sessões. Sessões são definidas como um conjunto de ações durante um período de tempo. Estão ações totalizam em conteúdo gerado.
+
+Uma sessão poderá ser identificada de forma única e simples, e poderá ser removida ou alterada pelos professores autores.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 03 – Acessar sessões}
+
+\textbf{Descrição:} a ferramenta deve permitir que alunos e professores acessem sessões já iniciadas. Quando acessado como aluno, as ações realizadas são apenas visíveis ao próprio aluno, já quando acesso como professor, as ações realizadas serão distribuídas entre todos os participantes da sessão.
+
+Um único usuário poderá acessar uma mesma sessão em mais de um dispositivo diferente. Permitindo, por exemplo, que professores acessem uma versão para projeção e outra gerenciar o conteúdo. Ou mesmo um aluno, acesse ao mesmo tempo de um \emph{tablet} e \emph{notebook}.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 04 – Projetar apresentações de slides em uma sessão}
+
+\textbf{Descrição:} a ferramenta deve permitir que professores insiram e projetem apresentações de slides dentro de uma sessão. Uma vez inserido e gerenciado a apresentação de slides (por exemplo, alterar do slide 1 para o slide 2), todos os participantes receberão e visualizarão o mesmo slide.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 05 – Anotações}
+
+\textbf{Descrição:} a ferramenta deve permitir que alunos e professores anotem o conteúdo através de ferramentas de desenho. As anotações feitas por professores serão distribuídas a todos os alunos, já as realizadas pelos alunos serão disponíveis apenas para os que as criaram.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 06 – Quiz}
+
+\textbf{Descrição:} a ferramenta deve permitir que professores realizem pequenas enquetes durante uma sessão. As respostas destas questões deverão serem totalizadas em tempo real ao professor, que pode escolher se quer exibir os resultados a todos os participantes.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 07 – Coletar e sumarizar opiniões sobre a sessão}
+
+\textbf{Descrição:} durante uma sessão, os alunos poderão indicar seus relativos níveis de satisfação imediato ao professor. Este nível de satisfação é exibido em tempo real ao professor, e permite uma análise imediata do andamento de uma sessão. Os níveis de satisfação coletados serão: positivo, neutro e negativo. Esta informação será armazenada também para posterior análise pelo professor.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 08 – Coletar e sumarizar dúvidas durante e após a sessão}
+
+\textbf{Descrição:} permitir que alunos façam perguntas durante e após as sessões. No momento de realizar uma pergunta, o aluno pode informar se é apenas para o professor ou se pode ser respondida por um outro aluno. Ambos, professores e alunos, podem continuar colaborando sobre a dúvida postada.
+
+A dúvida também pode ser contextualizada sendo indicado o momento em que ela ocorreu dentro da sessão. Em sua resposta, podem ser citados momentos específicos da sessão (atual ou outras sessões).
+
+\textbf{Prioridade:} essencial.
+
+
+\subsection{RF 09 – Rever uma sessão}
+
+\textbf{Descrição:} após o fim de uma sessão, todos os usuários poderão rever o conteúdo construído, podendo controlar o fluxo através de uma linha do tempo.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 10 – Colaborar assincronamente em uma sessão}
+
+\textbf{Descrição:} após o fim de uma sessão, todos os usuários poderão rever a mesma e colaborar adicionando anotações. Exibindo para o usuário uma linha do tempo com as ações que ocorreram durate a sessão.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 11 – Permitir o compartilhamento de código-fonte em tempo-real}
+
+\textbf{Descrição:} permitir que o professor construa códigos de linguagens de programação e que estes códigos sejam compartilhados em tempo-real com os alunos.
+
+\textbf{Prioridade:} essencial.
+
+\subsection{RF 12 - Permitir integração com outros sistemas}
+
+\textbf{Descrição:} permitir que outros sistemas interajam programaticamente com o Mindboard e realize as seguintes operações:
+
+- Identificar e autenticar usuários;
+
+- Gerenciar sessões e permitir que as mesmas sejam acessadas diretamente do outro sistema;
+
+\textbf{Prioridade:} desejado.
+
+\section{Requisitos não funcionais}
+
+Os requisitos não funcionais incluem os requisitos de desempenho e outros atributos de qualidade do produto, como usabilidade, padrões de codificação e implementação \cite{padua05}. Os requisitos não funcionais esperados para a ferramenta Mindboard são descritos a seguir.
+
+\textbf{RNF 1} – A ferramenta Mindboard deve possuir uma arquitetura facilmente extensível, permitindo futuras funcionalidades de serem acrescentadas sem que seja necessário remodelar toda a ferramenta.
+
+Este requisito não funcional será atingido definindo uma arquitetura em módulos e através do padrão de projetos MVC – Model, View e Controller, que será descrito com mais detalhes ainda neste capítulo. Com esta organização do código será possível adicionar novas funcionalidades evitando retrabalhos.
+
+
+\textbf{RNF 2} – A ferramenta Mindboard deve possuir suporte a computadores e dispositivos móveis, possuindo uma interface gráfica adaptável a plataforma utilizada.
+
+Este requisito não funcional será obtido através do desenvolvimento de interfaces responsivas utilizando HTML, CSS e JavaScript.
+
+\textbf{RNF 3} – A ferramenta Mindboard deve possuir uma forma de acesso simplificada, reduzindo assim barreiras de utilização. 
+
+Para atender este requisito serão permitidas duas formas de acesso. A primeira através de um endereço curto, e uma segunda maneira, através da representação gráfica em um QR-Code deste endereço curto. Assim, será possível a digitação rápida do endereço ou a leitura direta por dispositivos móveis (no caso do QR-Code).
+
+\textbf{RNF 4} – A ferramenta Mindboard deve permitir que um mesmo usuário acesse de dispositivos diferentes dentro de uma mesma sessão. 
+
+A ferramenta deverá, para atender este requisito, não distinguir e não restringir o número de acessos por um mesmo usuário.
+
+\textbf{RNF 5} – A ferramenta Mindboard deve ser escalável, permitindo atender um grande número de usuários simultâneos apenas aumentando os recursos da infraestrutura, como por exemplo, aumentando o número de servidores, ou ampliando a quantidade de memória e processamento.  Para permitir a escalabilidade, a arquitetura da ferramenta será definida utilizando balanceadores de carga, replicas de servidores de aplicação, replicas de servidores de bancos de dados e replicas de banco de dados em memória. A arquitetura escalável é mostrada na Seção \ref{sec:tecnologias}.
