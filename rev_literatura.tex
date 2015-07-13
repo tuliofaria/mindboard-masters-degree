@@ -1,18 +1,19 @@
 \chapter{Revisão da Bibliografia}
 \label{chap:revisao}
 
-Este capítulo descreve o trabalho de revisão da bibliografia realizado. Foram realizadas duas revisões exploratórias: uma exploratória livre e uma seguindo recomendações de \citeonline{kitchenham:2004} porém com menos rigidez, ambas com o objetivo principal de investigar e estabelecer um conjunto de ferramentas computacionais e suas características utilizadas no ensino médio e superior tanto em sala de aula quanto em ambientes virtuais. Buscando também informações sobre como é realizado seu uso através de dispositivos móveis. 
+Este capítulo descreve o trabalho de revisão da bibliografia realizado. Foram realizadas duas revisões exploratórias: uma exploratória livre e uma seguindo recomendações de \citeonline{kitchenham:2004} porém com menos rigidez, ambas com o objetivo principal de estabelecer um conjunto de funcionalidades presentes em sistemas utilizadas em sala de aula no ensino médio e superior tanto em sala de aula quanto em fora dela. É levantado também informações sobre como é realizado seu uso através de dispositivos móveis. Além disso, foi pesquisado também ferramentas comerciais que também podem ser utilizadas com esses objetivos. 
 
-Além destes fatores, serão analisados e discutidos os resultados obtidos. Assim, este capítulo visa encontrar relatos na literatura sobre a linha a ser pesquisada neste trabalho. Foram pesquisadas também ferramentas comerciais que também fazem parte da linha do trabalho. 
+Assim, estas funcionalidades servem de base para a definição de um conjunto de funcionalidades que poderiam ser utilizadas em um único sistema integrado e também contribuiram para a definição dos requisitos funcionais do protótipo desenvolvido neste trabalho.
  
 \section{Revisões relacionadas}
+
 Há revisões sistemáticas publicados que possuem objetivos bem próximos aos aqui almejados, porém extraindo informações diferentes da proposta por este.
 
 Em \citeonline{barbosa:2012} é realizada uma revisão sistemática da literatura com o objetivo de investigar e estabelecer um conjunto de características e requisitos para o domínio de sistemas computacionais de aprendizagem móveis, focando principalmente nas características e requisitos não funcionais.
 
 Neste trabalho é descrito pontos relevantes a serem considerados em projetos de sistemas computacionais de aprendizagem convencionais e com suporte a dispositivos móveis. Segundo ainda ao autor, um projeto de sistema deve atender aos requisitos básicos educacionais/pedagógicos, garantir um nível de serviço, segurança e desempenho mínimo, atentando-se também a usabilidade do mesmo.
 
-A revisão realizada neste trabalho difere do exposto por \citeonline{barbosa:2012} por levantar características e funcionalidades de sistemas convencionais que podem de alguma forma ou não possuírem suporte a dispositivos móveis, e também por almejar por investigar quais as características funcionais dos mesmos, não focando principalmente em requisitos não funcionais.
+A revisão realizada neste trabalho difere do exposto por \citeonline{barbosa:2012} por levantar características e funcionalidades de sistemas convencionais que podem de alguma forma ou não possuírem suporte a dispositivos móveis, e também por almejar levantar as funcionalidades dos mesmos, não focando principalmente em requisitos não funcionais.
 
 \section{Metodologia}
 
@@ -20,7 +21,7 @@ A revisão sistemática da literatura consiste em uma forma de identificar, vali
 
 Existem muitos motivos para se fazer uma revisão, dentre eles: conhecer de forma abrangente um determinado assunto, identificar possíveis oportunidades para futuras pesquisas ou ainda para ser utilizada como base a atividades de pesquisa \cite{kitchenham:2004}. 
 
-O planejamento dsta revisão foi realizada segundo \cite{kitchenham:2004}, onde aconselha-se a definição das perguntas de pesquisa como a primeira tarefa após a definição do objetivo principal. As perguntas de pesquisa definidas para este trabalho estão descritas na Tabela \ref{tab:perguntas}.
+O planejamento desta revisão foi realizada segundo \cite{kitchenham:2004}, onde aconselha-se a definição das perguntas de pesquisa como a primeira tarefa após a definição do objetivo principal. As perguntas de pesquisa definidas para este trabalho estão descritas na Tabela \ref{tab:perguntas}.
 
 \bgroup
 \def\arraystretch{1.5} % 1 is the default, change whatever you need
@@ -40,7 +41,7 @@ O planejamento dsta revisão foi realizada segundo \cite{kitchenham:2004}, onde 
 \egroup
 
 
-Após a definição das perguntas de pesquisa, foi planejado uma estratégia de busca. Nesta atividade foram escolhidas quais bases de dados seriam utilizadas como fonte de artigos e quais seriam os critérios para incluir ou não um artigo de acordo com sua relevância ao objetivo da pesquisa. Assim sendo, foram escolhidas como fontes de artigos as seguintes bases: IEEE Xplore, ACM Digital Library e Revista Brasileira de Informática na Educação – RBIE.
+Após a definição das perguntas de pesquisa, foi planejado uma estratégia de busca. Nesta atividade foram escolhidas quais bases de dados seriam utilizadas como fonte de artigos e quais seriam os critérios para incluir ou não um artigo de acordo com sua relevância ao objetivo da pesquisa. Assim sendo, foram escolhidas como fontes de artigos as seguintes bases: IEEE Xplore, ACM Digital Library e Revista Brasileira de Informática na Educação (RBIE).
 
 Definidas as fontes onde seriam realizadas as buscas, a próxima etapa foi estabelecer como as buscas seriam realizadas através da construção de \emph{strings} de busca. A Tabela \ref{tab:strings} mostra as bases e suas respectivas \emph{strings}. Como as \emph{strings} de busca não foram padronizadas entre as fontes, para aumentar o número de artigos retornados, está revisão é considerada exploratória e não sistemática.
 
@@ -97,13 +98,15 @@ Trabalhos que são estudos secundários \\ \hline
 
 Para a realização das buscas nas bases científicas, bem como gerenciar o processo de classificação dos artigos de acordo com os critérios de inclusão e exclusão, foi desenvolvido a ferramenta JustReview \cite{justreview_artigo}. A ferramenta salva os resultados obtidos através das buscas às bases de dados, e permite também uma forma eficiente de classificar os artigos confrontando o \emph{abstract} com os critérios de inclusão e exclusão. Após realizado a primeira classificação dos artigos através do \emph{abstract}, a ferramenta baixa as versões completas dos artigos classificados como relevantes para leitura.
 
-A revisão exploratória buscou ferramentas de mercado que geralmente não geraram publicações científicas, e portanto, não foram possíveis de serem analisadas na revisão sistemática. Foram buscadas ferramentas que podem ser utilizadas em sala de aula e no ensino a distância, e foi feita também a análise quando ao uso em plataforma móveis.
+A revisão exploratória buscou ferramentas de mercado que geralmente não geraram publicações científicas, e portanto, não foram possíveis de serem analisadas na revisão em bases científicas. Foram buscadas ferramentas que podem ser utilizadas em sala de aula e no ensino a distância, e foi feita também a análise quando ao uso em plataforma móveis.
 
 \section{Resultados e discussão}
+
 A partir das buscas realizadas, foram retornados 751 artigos das 3 bases de dados utilizadas. Destes artigos, através da leitura dos \emph{abstracts} e depois de aplicado os critérios de inclusão e exclusão, foram selecionados 80 artigos para leitura completa. Após a leitura completa, 42 artigos foram selecionados para a extração das informações referentes a esta revisão, onde os resultados são apresentados a seguir. Foram encontrados também 12 ferramentas comerciais que também foram selecionados baseados nos critérios de inclusão e exclusão.
 
 \section{Funcionalidades presentes em sistemas de aprendizagem}
-As funcionalidades presentes em sistemas de aprendizagem extraídos dos artigos lidos são listadas e descritas e analisadas a seguir. Relatos sobre a expansão de uma determinada funcionalidade, ou algum uso ainda mais específico, também é analisado. Ao final da descrição de cada funcionalidade é sumarizado os artigos que descrevem ferramentas com a funcionalidade descrita.
+
+As funcionalidades presentes em sistemas de aprendizagem extraídos dos artigos lidos são listadas, descritas e analisadas a seguir. Relatos sobre a expansão de uma determinada funcionalidade, ou algum uso ainda mais específico, também é analisado. Ao final da descrição de cada funcionalidade é sumarizado os artigos que descrevem sistemas que possuem essa funcionalidade.
 
 \textbf{Quiz}: permite que os alunos respondam a uma ou mais questões fechadas \cite{tokiwa_web-based_2009, ijtihadie_offline_2010, schmiedl_mobile_2010, covic_development_2010, schon_lightweight_2012}, e o professor monitore as respostas das mesmas, gerando visualizações gráficas. O \emph{Clicker} é uma aplicação especial de Quiz onde geralmente as respostas são enviadas através de hardwares específicos \cite{tokiwa_web-based_2009}. O Quiz pode ser utilizado também para aumentar a motivação em cursos presenciais e a distância, principalmente pela sua simplicidade e rapidez em ser aplicado \cite{tokiwa_web-based_2009}. Funcionalidade presente em:
 
@@ -359,16 +362,14 @@ Tecnologias web 2.0 (blog, wiki, RSS, etc.) & 49 (20,9\%) & 103 (43,8\%) & 44 (1
 
 Nesta pesquisa, fica evidente a importância para os alunos que os sistemas de aprendizagem possam permitir a colaboração e uma maior comunicação entre os alunos e entre os alunos e professores, bem como uma maior proximidade com os sistemas e plataformas sociais de mercado.
 
-\section{Resultados obtidos}
+Além disso, foi encontrado o sistema Quadro-Branco que tem como objetivo adicionar colaboração e interação para alunos com problemas cognitivos, sensoriais e físicos \cite{quadro_branco}. Esse sistema assemelha-se bastante ao Mindboard, e possui funcionalidades interessantes como a construção textual colaborativa e uma interface gráfica acessível a deficientes visuais. 
 
-A maioria dos artigos que apresentam seus resultados apenas o relatam como uma melhoria no processo de ensino e aprendizagem, mas não mostram como o resultado foi mensurado. Alguns artigos mostram a melhoria através da opinião dos alunos obtidos através de um questionário \cite{rawat_work_2008}. Há artigos que apenas relatam que o uso da ferramenta ajudou a aumentar a motivação dos alunos em sala de aula e em cursos a distância \cite{tokiwa_web-based_2009}.
-No artigo \cite{singh_collaborative_2004} foi relatado um problema com a usabilidade da ferramenta de compartilhamento de notas e apresentação de slides, que a tornava mais difícil de ser utilizada, mesmo ela sendo descrita pelos alunos como de grande valor ao processo de aprendizagem.
+Uma diferença entre o Mindboard e o Quadro-branco é no modo de colaboração, uma vez que no Mindboard é feita através de anotações sobre os conteúdos e no Quadro-Branco é realizada através da produção textual em conjunto. Outra diferenciação é o público-alvo de cada sistema, o Quadro-Branco buscou atender usuários que possuem algum tipo de problema cognitivo, sensorial ou físico, enquanto o Mindboard objetivou alunos sem estas restrições. O sistema Quadro-Branco também possui uma funcionalidade que pode indicar seu uso mais apropriado para o ensino a distância que é a transmissão de áudio e vídeo.
 
-\section{Conclusão}
-Este artigo apresentou as funcionalidades presentes em sistemas de aprendizagem móveis que podem ser utilizados em sala de aula ou no ensino a distância, obtidos através da revisão sistemática proposta, os quais cumpriram com o objetivo deste trabalho que era conhecer como está sendo aplicado tecnologia e colaboração em sistemas de ensino e aprendizagem.
+Outra ferramenta encontrada que também possui objetivos bem semelhantes ao Mindboard é a apresentada em \citeonline{singh_collaborative_2004}. Essa ferramenta tem como objetivo o compartilhamento de apresentações e de notas utilizando dispositivos móveis PDA, os antecessores dos \emph{smartphones}. No estudo, os autores apresentam problemas de legibilidade por parte dos alunos e também algumas preocupações dos alunos quanto a privacidade das notas realizadas. Esta ferramenta difere-se do sistema Mindboard também pelo foco, pois o Mindboard pode ser utilizado tanta em computadores quanto em dispositivos móveis. Além disso, no Mindboard o sistema de anotações permitem uma maior colaboração entre os alunos, tornando-se uma funcionalidade de colaboração. Nos resultados desta ferramenta, os alunos disseram que ela é de grande valor ao processo de aprendizagem \cite{singh_collaborative_2004}, o que indica que ferramentas que seguem por esta linha podem contribuir muito para o processo.
 
-O conjunto de funcionalidades aqui apresentadas servirão de base para outros pesquisadores possam decidir ou levantar quais funcionalidades são relevantes em um sistema a ser utilizado em sala de aula e no ensino a distância.
+Os artigos que apresentam seus resultados apenas o relatam como uma melhoria no processo de ensino e aprendizagem, mas não mostram como o resultado foi mensurado. Alguns artigos mostram a melhoria através da opinião dos alunos obtidos através de um questionário \cite{rawat_work_2008}. Há artigos que apenas relatam que o uso da ferramenta ajudou a aumentar a motivação dos alunos em sala de aula e em cursos a distância \cite{tokiwa_web-based_2009}.
 
-Outra contribuição deste trabalho refere-se ao desenvolvimento da ferramenta JustReview \cite{justreview}, a qual teve seu código fonte aberto e pode ser útil a vários pesquisadores que também estejam realizando trabalhos de revisões sistemáticas. Um caso de uso também foi publicado sobre a ferramenta em \cite{justreview_artigo}.
+Esse capítulo apresentou as funcionalidades levantadas que estão presentes em sistemas de aprendizagem que podem ser utilizados em sala de aula ou no ensino a distância, e que podem ou não possuir suporte a dispositivos móveis, obtidos através da revisão exploratória.
 
-Como trabalhos futuros, a partir das funcionalidades levantadas, trabalhar na concepção, desenvolvimento e levantamento dos resultados da aplicação de um sistema que contemple um subconjuntos destas.
+As funcionalidades aqui apresentadas ajudaram a definir um conjunto de funcionalidades interessantes a um sistema a ser utilizado em sala de aula e fora dela, contribuindo assim para o objetivo deste trabalho.
