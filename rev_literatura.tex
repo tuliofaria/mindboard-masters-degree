@@ -11,13 +11,13 @@ Há revisões sistemáticas publicados que possuem objetivos bem próximos aos a
 
 Em \citeonline{barbosa:2012} é realizada uma revisão sistemática da literatura com o objetivo de investigar e estabelecer um conjunto de características e requisitos para o domínio de sistemas computacionais de aprendizagem móveis, focando principalmente nas características e requisitos não funcionais.
 
-Neste trabalho é descrito pontos relevantes a serem considerados em projetos de sistemas computacionais de aprendizagem convencionais e com suporte a dispositivos móveis. Segundo ainda ao autor, um projeto de sistema deve atender aos requisitos básicos educacionais/pedagógicos, garantir um nível de serviço, segurança e desempenho mínimo, atentando-se também a usabilidade do mesmo.
+No trabalho são descritos pontos relevantes a serem considerados em projetos de sistemas computacionais de aprendizagem convencionais e com suporte a dispositivos móveis. Segundo ainda o autor, um projeto de sistema deve atender aos requisitos básicos educacionais/pedagógicos, garantir um nível de serviço, segurança e desempenho mínimo, atentando-se também a usabilidade do mesmo.
 
 A revisão realizada neste trabalho difere do exposto por \citeonline{barbosa:2012} por levantar características e funcionalidades de sistemas convencionais que podem de alguma forma ou não possuírem suporte a dispositivos móveis, e também por almejar levantar as funcionalidades dos mesmos, não focando principalmente em requisitos não funcionais.
 
 \section{Metodologia}
 
-A revisão sistemática da literatura consiste em uma forma de identificar, validar e interpretar todas as pesquisas relevantes a uma determinada pergunta de pesquisa, tópico ou fenômeno de interesse \cite{kitchenham:2004}. 
+%A revisão sistemática da literatura consiste em uma forma de identificar, validar e interpretar todas as pesquisas relevantes a uma determinada pergunta de pesquisa, tópico ou fenômeno de interesse \cite{kitchenham:2004}. 
 
 Existem muitos motivos para se fazer uma revisão, dentre eles: conhecer de forma abrangente um determinado assunto, identificar possíveis oportunidades para futuras pesquisas ou ainda para ser utilizada como base a atividades de pesquisa \cite{kitchenham:2004}. 
 
@@ -27,6 +27,7 @@ O planejamento desta revisão foi realizada segundo \cite{kitchenham:2004}, onde
 \def\arraystretch{1.5} % 1 is the default, change whatever you need
 \begin{table}[h]{} % t - top of page - h - here - b - bottom
 \centering
+\caption{Perguntas de pesquisa definidas para a revisão sistemática}
 \begin{tabular}{|p{14cm}|} \hline
 \textbf{Pergunta 1:} Quais sistemas computacionais são utilizados em aula, online e/ou extra-classe? \\ \hline
 \textbf{Pergunta 2:} Quais destes sistemas são multiplataforma, incluindo sistemas móveis? \\ \hline
@@ -35,7 +36,7 @@ O planejamento desta revisão foi realizada segundo \cite{kitchenham:2004}, onde
 \textbf{Pergunta 5:} Quais destes sistemas permitem ao aluno rever a aula posteriormente? \\ \hline
 \textbf{Pergunta 6:} Se utilizado em sala de aula, quais os resultados obtidos baseados em métricas como desempenho acadêmico, motivação? \\ \hline
 \end{tabular}
-\caption{Perguntas de pesquisa definidas para a revisão sistemática}
+\source{Tulio Faria, 2015}
 \label{tab:perguntas}
 \end{table}
 \egroup
@@ -49,6 +50,7 @@ Definidas as fontes onde seriam realizadas as buscas, a próxima etapa foi estab
 \def\arraystretch{1.5} % 1 is the default, change whatever you need
 \begin{table}[h]{} % t - top of page - h - here - b - bottom
 \centering
+\caption{\emph{Strings} de busca utilizadas em cada base}
 \begin{tabular}{ | p{3cm} | p{10cm}| } \hline
 \textbf{Base} & \textbf{\emph{String} de busca} \\ \hline
 IEEE Xplore & \emph{((teach OR learn OR education) AND ("computer assisted" OR "computer aided" OR "computer supported") AND mobile AND (web OR internet))} \\ \hline
@@ -56,24 +58,25 @@ ACM & \emph{(teach or learn or education) and ("computer assisted" or "computer 
 RBIE & \emph{colaboração} \\ \hline
 RBIE & \emph{móvel} \\ \hline
 \end{tabular}
-\caption{\emph{Strings} de busca utilizadas em cada base}
+\source{Tulio Faria, 2015}
 \label{tab:strings}
 \end{table}
 \egroup
 
-As \emph{strings} de busca foram construídas levando em consideração o tipo de base que estávamos buscando. Por exemplo, a \emph{string} conter termos \emph{informática e educação} na RBIE não se fez explicitamente necessário, por a mesma tratar-se de uma revista específica sobre este assunto.
+As \emph{strings} de busca foram construídas levando em consideração o tipo de base em que a busca seria feita. Por exemplo, a \emph{string} conter termos \emph{informática e educação} na RBIE não se fez explicitamente necessário, por a mesma tratar-se de uma revista específica sobre este assunto.
 
 Na etapa subsequente, foram estabelecidos os critérios de inclusão e exclusão, os quais auxiliam na classificação de um artigo como relevante ou não a pesquisa. A Tabela \ref{tab:criteriosInclusao} e \ref{tab:criteriosExclusao} mostram os critérios de inclusão e de exclusão, respectivamente.
 \bgroup
 \def\arraystretch{1.5} % 1 is the default, change whatever you need
 \begin{table}[h]{} % t - top of page - h - here - b - bottom
 \centering
+\caption{Critérios de inclusão}
 \begin{tabular}{ | p{14cm}| } \hline
 Publicados e disponíveis integralmente em bases de dados científicas \\ \hline
 Trabalhos que utilizam tecnologia em educação, especificamente com utilização de tecnologias móveis \\ \hline
 %trabalhos recentes (publicados a partir de 2007) publicados nas fontes descritas acima (analisar se vai precisar) \\ \hline
 \end{tabular}
-\caption{Critérios de inclusão}
+\source{Tulio Faria, 2015}
 \label{tab:criteriosInclusao}
 \end{table}
 \egroup
@@ -84,6 +87,7 @@ Trabalhos que utilizam tecnologia em educação, especificamente com utilizaçã
 \def\arraystretch{1.5} % 1 is the default, change whatever you need
 \begin{table}[h]{} % t - top of page - h - here - b - bottom
 \centering
+\caption{Critérios de exclusão}
 \begin{tabular}{ | p{14cm}| } \hline
 Trabalhos que não são relacionados com tecnologia na educação. \\ \hline
 Trabalhos como laboratórios virtuais ou ferramentas semelhantes voltadas a auxiliar o aprendizado de um único conteúdo ou conjunto de conteúdo específicos \\ \hline
@@ -91,14 +95,14 @@ Trabalhos que não são aplicados ao ensino médio e superior \\ \hline
 Trabalhos que são estudos secundários \\ \hline
 %Trabalhos que utilizam tecnologia na educação que não são multiplataforma \\ \hline
 \end{tabular}
-\caption{Critérios de exclusão}
+\source{Tulio Faria, 2015}
 \label{tab:criteriosExclusao}
 \end{table}
 \egroup
 
 Para a realização das buscas nas bases científicas, bem como gerenciar o processo de classificação dos artigos de acordo com os critérios de inclusão e exclusão, foi desenvolvido a ferramenta JustReview \cite{justreview_artigo}. A ferramenta salva os resultados obtidos através das buscas às bases de dados, e permite também uma forma eficiente de classificar os artigos confrontando o \emph{abstract} com os critérios de inclusão e exclusão. Após realizado a primeira classificação dos artigos através do \emph{abstract}, a ferramenta baixa as versões completas dos artigos classificados como relevantes para leitura.
 
-A revisão exploratória buscou ferramentas de mercado que geralmente não geraram publicações científicas, e portanto, não foram possíveis de serem analisadas na revisão em bases científicas. Foram buscadas ferramentas que podem ser utilizadas em sala de aula e no ensino a distância, e foi feita também a análise quando ao uso em plataforma móveis.
+A revisão exploratória buscou ainda ferramentas de mercado que geralmente não geraram publicações científicas, e portanto, não foram possíveis de serem analisadas na revisão em bases científicas. Foram buscadas ferramentas que podem ser utilizadas em sala de aula e no ensino a distância, e foi feita também a análise quando ao uso em plataforma móveis.
 
 \section{Resultados e discussão}
 
@@ -106,7 +110,7 @@ A partir das buscas realizadas, foram retornados 751 artigos das 3 bases de dado
 
 \section{Funcionalidades presentes em sistemas de aprendizagem}
 
-As funcionalidades presentes em sistemas de aprendizagem extraídos dos artigos lidos são listadas, descritas e analisadas a seguir. Relatos sobre a expansão de uma determinada funcionalidade, ou algum uso ainda mais específico, também é analisado. Ao final da descrição de cada funcionalidade é sumarizado os artigos que descrevem sistemas que possuem essa funcionalidade.
+As funcionalidades presentes em sistemas de aprendizagem extraídas dos artigos lidos são listadas, descritas e analisadas a seguir. Relatos sobre a expansão de uma determinada funcionalidade, ou algum uso ainda mais específico, também é analisado. Ao final da descrição de cada funcionalidade são sumarizados os artigos que descrevem sistemas que possuem essa funcionalidade.
 
 \textbf{Quiz}: permite que os alunos respondam a uma ou mais questões fechadas \cite{tokiwa_web-based_2009, ijtihadie_offline_2010, schmiedl_mobile_2010, covic_development_2010, schon_lightweight_2012}, e o professor monitore as respostas das mesmas, gerando visualizações gráficas. O \emph{Clicker} é uma aplicação especial de Quiz onde geralmente as respostas são enviadas através de hardwares específicos \cite{tokiwa_web-based_2009}. O Quiz pode ser utilizado também para aumentar a motivação em cursos presenciais e a distância, principalmente pela sua simplicidade e rapidez em ser aplicado \cite{tokiwa_web-based_2009}. Funcionalidade presente em:
 
@@ -341,13 +345,14 @@ As ferramentas comericiais seguintes também possuem suporte a dispositivos móv
     \item \citeonline{stick_pick}
 \end{itemize}
 
-Na realização desta revisão exploratória foi encontrada também a pesquisa \cite{pusnik_investigation_2010} realizada com alunos do ensino superior onde, categorias de funcionalidades foram confrontadas quanto o seu nível de importância para alunos em um sistema de ensino a distância a ser ativado. A Tabela \ref{tab:importancia} mostra o resultado desta pesquisa.
+Na realização desta revisão exploratória foi encontrada também a pesquisa \cite{pusnik_investigation_2010} realizada com alunos do ensino superior onde categorias de funcionalidades foram confrontadas quanto o seu nível de importância para alunos em um sistema de ensino a distância a ser ativado. A Tabela \ref{tab:importancia} mostra o resultado desta pesquisa.
  
 \bgroup
 \def\arraystretch{1.1} % 1 is the default, change whatever you need
 \begin{table}[h]{} % t - top of page - h - here - b - bottom
 \centering
 \small
+\caption{Importância de uma característica a ser ativada em um sistema de ensino a distância }
 \begin{tabular}{ | p{3cm}| p{2cm}| p{2cm}| p{1.8cm}| p{1.8cm}| p{1.5cm} | p{1.7cm}| } \hline
 \textbf{Conjunto de funcionalidades} & \textbf{Muito importante} & \textbf{Importante} & \textbf{Indeciso} & \textbf{Não muito importante} & \textbf{Sem importância} & \textbf{Média / Desvio} \\ \hline
 Trabalho colaborativo com outros alunos & 74 (31,5 \%) & 103 (43,8\%) & 33 (14\%) & 21 (8,9\%) & 4 (1,7\%) & 3,94 / 0,983 \\ \hline
@@ -355,7 +360,7 @@ Comunicação com outros alunos (sínc. e assínc.) & 65 (27,7\%) & 100 (42,6\%)
 Comunicação com professores (sínc. e assínc.) & 116 (49,4\%) & 92 (39,1\%) & 16 (6,8\%) & 10 (4,3\%) & 1 (0,4\%) & 4,33 / 0,816 \\ \hline
 Tecnologias web 2.0 (blog, wiki, RSS, etc.) & 49 (20,9\%) & 103 (43,8\%) & 44 (18,7\%) & 35 (14,9\%) & 4 (1,7\%) & 3,67 / 1,021 \\ \hline
 \end{tabular}
-\caption{Importância de uma característica a ser ativada em um sistema de ensino a distância }
+\source{Tulio Faria, 2015}
 \label{tab:importancia}
 \end{table}
 \egroup
@@ -370,6 +375,6 @@ Outra ferramenta encontrada que também possui objetivos bem semelhantes ao Mind
 
 Os artigos que apresentam seus resultados apenas o relatam como uma melhoria no processo de ensino e aprendizagem, mas não mostram como o resultado foi mensurado. Alguns artigos mostram a melhoria através da opinião dos alunos obtidos através de um questionário \cite{rawat_work_2008}. Há artigos que apenas relatam que o uso da ferramenta ajudou a aumentar a motivação dos alunos em sala de aula e em cursos a distância \cite{tokiwa_web-based_2009}.
 
-Esse capítulo apresentou as funcionalidades levantadas que estão presentes em sistemas de aprendizagem que podem ser utilizados em sala de aula ou no ensino a distância, e que podem ou não possuir suporte a dispositivos móveis, obtidos através da revisão exploratória.
+Esta seção apresentou as funcionalidades levantadas que estão presentes em sistemas de aprendizagem que podem ser utilizados em sala de aula ou no ensino a distância, e que podem ou não possuir suporte a dispositivos móveis, obtidos através da revisão exploratória.
 
 As funcionalidades aqui apresentadas ajudaram a definir um conjunto de funcionalidades interessantes a um sistema a ser utilizado em sala de aula e fora dela, contribuindo assim para o objetivo deste trabalho.
